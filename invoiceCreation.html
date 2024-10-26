@@ -1,0 +1,46 @@
+<template>
+    <lightning-card title="Create Invoice" icon-name="custom:custom63">
+        <div>
+            <table>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Origin Record</td>
+                    <td>{invoiceData.originRecord}</td>
+                </tr>
+                <tr>
+                    <td>Account</td>
+                    <td>{invoiceData.account}</td>
+                </tr>
+                <tr>
+                    <td>Invoice Date</td>
+                    <td>{invoiceData.invoiceDate}</td>
+                </tr>
+                <tr>
+                    <td>Due Date</td>
+                    <td>{invoiceData.invoiceDueDate}</td>
+                </tr>
+                <tr>
+                    <td>Child Relationship Name</td>
+                    <td>{invoiceData.childRelationshipName}</td>
+                </tr>
+                <tr>
+                    <td>Line Item Description</td>
+                    <td>{invoiceData.lineItemDescription}</td>
+                </tr>
+                <tr>
+                    <td>Line Item Quantity</td>
+                    <td>{invoiceData.lineItemQuantity}</td>
+                </tr>
+                <tr>
+                    <td>Line Item Unit Price</td>
+                    <td>{invoiceData.lineItemUnitPrice}</td>
+                </tr>
+            </table>
+            <lightning-button label="Create Invoice" onclick={handleCreateInvoice}></lightning-button>
+            <lightning-button label="Go to Invoice Creation Page" onclick={handleNavigateToCreateInvoice}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
